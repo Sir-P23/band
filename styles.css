@@ -1,0 +1,491 @@
+    body{
+        scroll-behavior: smooth;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 10%;
+        background-color: aqua;
+    }
+
+
+    nav{
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        background-color: black;
+        top: 0;
+        padding: 1% 0 1%;
+        left: 0;
+        display: flex;
+        gap: 2%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .home{
+        margin-left: 3%;
+        font-weight: 600;
+    }
+
+    #display{
+        font-weight: 600;
+        display: flex;
+        gap: 10px;
+    }
+
+    #cancel{
+        display: none;
+    }
+    #show{
+        display: none;
+    }
+
+    .aa{
+        display: none;
+    }
+
+    .dropdown1{
+        font-weight: 600;
+        background-color: black;
+        color: white;      
+    }
+
+    .dropcontent1 a{
+        text-decoration: none;
+        display: block;
+        color: black;
+        padding: 12px;
+    }
+
+    .dropbtn1 :hover{
+        width: 30px;
+        background-color: white;
+    }
+
+    .dropcontent1 a:hover{
+        background-color: aliceblue;
+    }
+
+    .dropcontent1{
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        min-width: 94px;
+        z-index: 1;
+    }
+
+    .dropdown1:hover .dropcontent1{
+        display: block;
+    }
+
+    .searchdiv{
+      margin-left: 63%;
+      font-size: 20px;
+    }
+  
+
+    /* cont0 */
+    .cont0{
+        width: 100%;
+        display: flex;
+    }
+    .cont1{
+        top: 5%;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-image: url('images/chicago.jpg');
+        background-size: cover;
+        animation-name: mn;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        background-position: 50% 0%;
+    }
+    
+    
+   @keyframes mn {
+    0%{
+        background-image: url('images/ny.jpg');
+        content: 'newyork';
+    }
+   
+    50%{
+        background-image: url('images/chicago.jpg');
+    }
+
+    100%{
+        background-image: url('images/la.jpg');
+    }
+   }
+
+    .cont2 {
+        width: 100%;
+        margin-top: 45%;
+    }
+
+    .cont2 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .italics{
+        position: relative;
+        text-align: center;
+        bottom: 10px;
+        font-size: 15px;
+    }
+
+    .the-band{
+        margin-left: 25%;
+        width: 50%;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .band-members{
+        display: flex;
+        text-align: center;
+        gap: 5%;
+        justify-content: center;
+    }
+
+    .band-photo{
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .band-photo:hover{
+        transform: translatey(-10px);
+    }
+
+    /* .cont3 */
+
+    .cont3{
+        width: 100%;
+        height: 700px;
+        color: white;
+        background-color: black;
+    }
+    
+    .cont3 h2{
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+
+    .italics2{
+        position: relative;
+        text-align: center;
+        top: 40px;
+    }
+
+    .div1{
+        background-color: white;
+        width: 50%;
+        height: 133px;
+        margin-left: 25%;
+        margin-top: 100px;
+        color: black;
+    }
+
+    .div1 div{
+        height: 43px;
+        border: 1px solid black;
+    }
+
+    .div1 div p,span{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .div1 span{
+        background-color: rgb(202, 43, 43);
+        color: white;
+        margin-left: 15%;
+        position: relative;
+        top: 13%;
+    }
+
+    .three{
+        position: relative;
+        bottom: 50px;
+        left: 93%;
+        text-align: center;
+        width: 20px;
+        height:20px ;
+        font-size: 17px;
+        color: white;
+        border-radius: 15px;
+        background-color: black;
+    }
+
+    .venue{
+        margin-left: 25%;
+        display: flex;
+        gap: 2%;
+    }
+
+    .venues{
+        width:19.7%;
+        padding: 0 5px 2%;
+        background-color: white;
+        margin-top: 30px;
+        color: black;
+    }
+
+    .venues img{
+        width: 100%;
+    }
+
+    .venues img:hover{
+        transform: scale(1.1);
+    }
+
+    .buy{
+        margin-left: 15px;
+        background-color: black;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .cont4{ 
+        width: 100%;
+    }
+
+    .cont4 h2{
+        text-align: center;
+    }
+
+    .fan{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .form-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10%;
+    }
+
+
+    form input{
+        height: 25px;
+    }
+
+    .text{
+        margin-top: 5px;
+        width: 98%;
+    }
+
+    #send{
+        background-color: black;
+        color: white;
+        margin-left: 84%;
+        margin-top: 5px;
+    }
+
+    .map{
+        margin-top: 70px;
+        width: 100%;
+        height: 500px;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    footer a{
+        color: blue;
+    }
+
+    @media (max-width: 1024px){
+      .cont1{
+        margin-top: 0%;
+        /* height: 45%; */
+    }  
+    }
+
+    
+
+    @media (max-width: 768px) {
+    
+    .searchdiv{
+        margin-left: 45%;
+        font-size: 20px;
+    }
+
+    .cont1{
+        height: 300px;
+    }
+
+    .cont2 {
+        margin-top: 65%;
+    }
+
+    .the-band{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+     .div1{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .venue{
+        margin-left: 5%;
+    }
+
+    .venues{
+        width:29%;
+        padding: 0 5px 2%;
+        background-color: white;
+        margin-top: 30px;
+        color: black;
+    }
+    }
+
+    @media(max-width:430px){
+        .home{
+        margin-left: 2%;
+        font-weight: 600;
+        z-index: 3;
+    }
+
+    #display{
+        width: 0%;
+        position: fixed;
+        background-color: black;
+        height: 50%;
+        display: none;
+        z-index: 2;
+        animation: display 1s ease-out forwards;
+    }
+
+    @keyframes display {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+    #display a{
+        display: block;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    #cancel{
+        display: block;
+        position: relative;
+        left: 90%;
+        font-size: 30px;
+    }
+    #show{
+        display: block;
+        margin-left: 74%;
+        color: white;
+    }
+
+    .aa{
+        display: block;
+    }
+
+    .dropdown1{
+        display: none;      
+    }
+    .searchdiv{
+        display: none;
+    }
+
+    .cont1{
+        /* height: 300px; */
+        width: 100%;
+    }
+
+    .cont2{
+        margin-top: 95%;
+        width: 100%;
+    }
+
+    .band-members{
+        flex-direction: column;
+    }
+
+    .band-photo{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .cont3{
+        width: 100%;
+        padding: 0 0 260%;
+    }
+
+    .venue{
+        margin-left: 5%;
+        flex-direction: column;
+    }
+
+    .venues{
+        width:92%;
+        padding: 0 5px 2%;
+        background-color: white;
+        margin-top: 30px;
+        color: black;
+    }
+
+    .cont4{
+        width: 100%;
+    }
+
+    .form-div{
+        margin-left: 5%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    form input{
+        width: 90%;
+        height: 25px;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+
+    .text{
+        margin-top: 5px;
+        width: 90%;
+    }
+
+    #send{
+        width: 100px;
+        background-color: black;
+        color: white;
+        margin-left: 65%;
+        margin-top: 10px;
+    }
+
+    .map{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    }
+
+    
+
+
+
+  

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="home">
+            <a href="" >HOME</a>
+        </div>
+    
+        <div id="display">
+            <a href="" onclick="cancelF()" id="cancel">X</a>
+            <a href="">BAND</a>
+            <a href="">TOUR</a>
+            <a href="">CONTACT</a>
+            <a href="" class="aa">MERCH</a>
+        </div>
+
+        <div onclick="showF()" id="show"><i class="fa fa-bars"></i></div>
+        
+
+        <div class="dropdown1">
+            <div class="dropbtn1">MORE <i class="fa fa-arrow-down"></i></div>
+                <div class="dropcontent1">
+                    <a href="">Merchandise</a>
+                    <a href="">Extras</a>
+                    <a href="">Media</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="searchdiv">
+            <a href=""> <i class="fa fa-search"></i></a>
+        </div>        
+    </nav>
+
+    <script>
+        function showF(){
+            document.getElementById("display").style.display = "block"
+        }
+
+        function cancelF(){
+            document.getElementById("display").style.display = "none"
+        }
+    </script>
+
+    <div class="cont0">
+    <div class="cont1"></div>
+
+    <section class="cont2">
+        <h2>THE BAND</h2>
+        <h5 class="italics"><i>we love music</i></h5>
+    
+        <div class="the-band">
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+
+            <div class="band-members">
+                <div class="band-member">
+                    <p>JOSHUA</p>
+                    <img src="images/bandmember.jpg" alt="" class="band-photo">
+                </div>
+
+                <div class="band-member">
+                    <p>PETER</p>
+                    <img src="images/bandmember.jpg" alt="" class="band-photo">
+                </div>
+
+                <div class="band-member">
+                    <p >MIRACLE</p>
+                    <img src="images/bandmember.jpg" alt="" class="band-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section class="cont3">
+        <h2>TOUR DATES</h2>
+        <h4 class="italics2">
+            <i>Remember to book your tickets!</i>
+        </h4>
+
+        <div class="div1">
+            <div>
+                <p>September</p>
+                <span>sold out</span>
+            </div>
+            <div>
+                <p>October</p>
+                <span>sold out</span>
+            </div>
+            <div>
+                <p>November</p>
+            </div>
+
+            <p class="three">3</p>            
+        </div>
+
+        <div class="venue">
+            <div class="venues">
+                <img src="images/newyork.jpg" alt="">
+                <b>New York</b>
+                <p>Fri 27 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut 
+                   rutrum sed vitae justo.
+                </p>
+               <div class="buy"><a href="buyticket.html">Buy Tickets</a></div>
+            </div>
+
+            <div class="venues">
+                <img src="images/paris.jpg" alt="">
+                <b>Paris</b>
+                <p>Sat 28 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut 
+                   rutrum sed vitae justo.
+                </p>
+                <div class="buy"><a href="buyticket.html">Buy Tickets</a></div>
+            </div>
+
+            <div class="venues">
+                <img src="images/sanfran.jpg" alt="">
+                <b>New York</b>
+                <p>Fri 29 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut 
+                    rutrum sed vitae justo.
+                </p>
+                <div class="buy"><a href="buyticket.html">Buy Tickets</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cont4">
+        <h2>CONTACT</h2>
+        <h5 class="fan"><i>Fan? Drop a note!</i></h5>
+
+        <div class="form-div">
+            <div class="div5">
+                <i class="fa fa-map"> </i> Enugu, Nigeria<br><br>
+                <i class="fa fa-phone"> </i> Phone: +234 000 0000<br><br>
+                <i class="fa fa-envelope"> </i> Email: upeter480@gmail.com
+            </div>
+
+            <div class="div6">
+                <form action="#send" >
+                    <input type="name" placeholder="Name" class="name">
+                    <input type="email" placeholder="Email" class="email"><br>
+                    <input type="text"  placeholder="Message" class="text"><br>
+                    <input type="submit" name="" id="send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <img src="images/map.jpg" alt="" class="map">
+    <footer>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Powered by <a href="">Sir-P</a></p>
+    </footer>
+</body>
+</html>
